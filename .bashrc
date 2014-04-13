@@ -202,9 +202,9 @@ if [ $? -eq 0 ]; then
   else
     echo -n "'$BIRed'"
   fi
-  echo -n "$(git rev-parse --abbrev-ref @{u})"
+  echo -n "$(git rev-parse --abbrev-ref @{u} 2> /dev/null)"
 fi
 )\n'$BIWhite'$(\
-if [ "$(id -u)" -eq "1" ]; then
+if [ "$(id -u)" -eq "0" ]; then
   echo "'$BIRed'"
 fi)\$ '$Color_Off
