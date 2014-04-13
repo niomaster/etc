@@ -117,6 +117,7 @@ export PATH=$PATH:/home/pieter/.local/bin/
 
 alias oo='xdg-open'
 alias pdflatex='pdflatex -interaction=batchmode'
+alias notify='notify-send -i /usr/share/icons/Humanity/apps/32/gnome-terminal.svg "Job completed with status $?"'
 
 # === Colors ===
 
