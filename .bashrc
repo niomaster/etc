@@ -121,6 +121,7 @@ alias notify='notify-send -i /usr/share/icons/Humanity/apps/32/gnome-terminal.sv
 alias gitp='git push'
 alias node='nodejs'
 alias ack='ack-grep'
+alias say='espeak --stdin'
 
 # === Colors ===
 
