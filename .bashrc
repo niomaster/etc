@@ -119,7 +119,6 @@ alias oo='xdg-open'
 alias pdflatex='pdflatex -interaction=batchmode'
 alias notify='notify-send -i /usr/share/icons/Humanity/apps/32/gnome-terminal.svg "Job completed with status $?"'
 alias gitp='git push'
-alias node='nodejs'
 
 # === Colors ===
 
@@ -211,3 +210,5 @@ fi
 if [ "$(id -u)" -eq "0" ]; then
   echo "'$BIRed'"
 fi)\$ '$Color_Off
+
+alias ta='tmux attach'
