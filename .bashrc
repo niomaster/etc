@@ -119,6 +119,9 @@ alias oo='xdg-open'
 alias pdflatex='pdflatex -interaction=batchmode'
 alias notify='notify-send -i /usr/share/icons/Humanity/apps/32/gnome-terminal.svg "Job completed with status $?"'
 alias gitp='git push'
+alias node='nodejs'
+alias ack='ack-grep'
+alias say='espeak --stdin'
 
 # === Colors ===
 
@@ -212,3 +215,4 @@ if [ "$(id -u)" -eq "0" ]; then
 fi)\$ '$Color_Off
 
 alias ta='tmux attach'
+git config --global alias.undo-commit 'reset --soft HEAD^'
