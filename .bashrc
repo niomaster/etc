@@ -216,3 +216,7 @@ fi)\$ '$Color_Off
 
 alias ta='tmux attach'
 git config --global alias.undo-commit 'reset --soft HEAD^'
+
+fix() {
+    echo "$* is gefixt. Het is nu OK."	
+}
