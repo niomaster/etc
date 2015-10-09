@@ -134,7 +134,7 @@ function play {
                --output="${TMPDIR:-/tmp/}%(title)s-%(id)s.%(ext)s" \
                --restrict-filenames \
                --format="bestaudio[ext!=webm]" \
-               --exec=afplay "$*"
+               --exec=mplayer "$*"
 }
 
 # === Colors ===
