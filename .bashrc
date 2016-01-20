@@ -122,6 +122,7 @@ alias gitp='git push'
 alias node='nodejs'
 alias ack='ack-grep'
 alias say='espeak --stdin'
+alias rekt='rm -rf'
 
 function play {
     # Skip DASH manifest for speed purposes. This might actually disable
