@@ -120,7 +120,6 @@ alias pdflatex='pdflatex -interaction=batchmode'
 alias notify='notify-send -i /usr/share/icons/Humanity/apps/32/gnome-terminal.svg "Job completed with status $?"'
 alias gitp='git push'
 alias node='nodejs'
-alias ack='ack-grep'
 alias say='espeak --stdin'
 alias rekt='rm -rf'
 
@@ -234,4 +233,8 @@ git config --global alias.undo-commit 'reset --soft HEAD^'
 
 fix() {
     echo "$* is gefixt. Het is nu OK."	
+}
+
+dutch() {
+    grep $* /usr/share/dict/dutch
 }
