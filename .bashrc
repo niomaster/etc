@@ -215,13 +215,13 @@ On_IWhite="\[\033[0;107m\]"   # White
 export PS1='\n'$BIWhite'\u'$White'@'$BIWhite'\h'$White':'$BIWhite'\w $(\
 git branch &> /dev/null
 if [ $? -eq 0 ]; then
-  stat="$(git status | grep clean)"
+  stat="$(git status 2> /dev/null | grep clean)"
   if [ -n "$stat" ]; then
     echo -n "'$BGreen'"
   else
     echo -n "'$BIRed'"
   fi
-  echo -n "$(git rev-parse --abbrev-ref @{u} 2> /dev/null)"
+  echo -n "$(git rev-parse --abbrev-ref HEAD 2> /dev/null)"
 fi
 )\n'$BIWhite'$(\
 if [ "$(id -u)" -eq "0" ]; then
