@@ -113,7 +113,7 @@ if ! shopt -oq posix; then
   fi
 fi
 
-export PATH=$PATH:/home/pieter/.local/bin/
+export PATH=$PATH:/home/pieter/.local/bin/:./.pieter/
 
 alias oo='xdg-open'
 alias pdflatex='pdflatex -interaction=batchmode'
